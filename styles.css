@@ -1,0 +1,111 @@
+
+body {
+  
+    background-color: rgb(31, 231, 154);
+    animation-name: example;
+    animation-duration: 4s;
+  }
+  
+  @keyframes example {
+    50%  {background-color: rgb(255, 0, 153);}
+  }
+
+img{
+  border: 1px solid #0d0202;
+  border-radius: 4px;
+  padding: 5px;
+}
+.home img{
+  border-radius: 50%;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #f8f8f8;
+    
+}
+header {
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px rgb(237, 18, 139);
+  }
+
+button {
+    border: 30px;
+    padding: 10px;
+    radius: 20px;
+    background-color :rgb(216, 33, 167);
+    border-radius: 12px;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+header {
+    border: 2px solid black;
+    outline: #4CAF50 solid 10px;
+    margin: auto;  
+    padding: 20px;
+    text-align: center;
+  }
+
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    color: #27ae60;
+}
+.h2{
+  color:deeppink;
+}
+
+
+
+#scroll-to-top {
+  position: right; /* Fix position relative to viewport */
+  bottom: 20px; /* Distance from the bottom */
+  right: 20px; /* Distance from the right */
+  width: 50px;
+  height: 90px;
+  color :rgb(238, 12, 87);
+  font-size: 70px;
+ 
+  line-height: 50px; /* Center the arrow vertically */
+  border-radius: 50%; /* Make it circular */
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+#scroll-to-top.show {
+  opacity: 1;
+  visibility: visible;
+  
+}
+
+/* Hover effect */
+#scroll-to-top:hover {
+  
+  border-color: #333;
+}
